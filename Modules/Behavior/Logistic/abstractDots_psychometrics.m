@@ -69,8 +69,8 @@ set(gca,'xlim',[min(cohsForPlot) max(cohsForPlot)],'ylim',[0 1])
 line(xlim,[0.5 0.5],'color','k')
 line([0 0],ylim,'color','k')
 
-xlabel 'Coherence'
-ylabel 'p (right)'
+xlabel 'Motion strength (% coh)'
+ylabel 'p (choose right)'
 axprefs(gca)
 
 end

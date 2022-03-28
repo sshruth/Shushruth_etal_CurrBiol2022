@@ -39,3 +39,7 @@ smME = abstractData.smith.ME;
 %% Figure 2 A & B
 annie.behavior = abstractDots_psychometrics(anMat,1,'Fig. 2A (AN)');
 smith.behavior = abstractDots_psychometrics(smMat,2,'Fig. 2B (SM)');
+
+%% Figure 2 C & D
+annie.ME = analyzeMotionEnergy(anMat,0,anME,'Fig. 2C (AN)');
+smith.ME = analyzeMotionEnergy(smMat,0,smME,'Fig. 2D (SM)');

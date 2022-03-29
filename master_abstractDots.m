@@ -43,3 +43,15 @@ smith.behavior = abstractDots_psychometrics(smMat,2,'Fig. 2B (SM)');
 %% Figure 2 C & D
 annie.ME = analyzeMotionEnergy(anMat,0,anME,'Fig. 2C (AN)');
 smith.ME = analyzeMotionEnergy(smMat,0,smME,'Fig. 2D (SM)');
+
+%% Figure 5
+plotPars.grouping = 'all';
+plotPars.trlcutoff = 0.33;
+plotPars.detrend = true;
+plotPars.filtSize = 30;
+
+plotPars.monkID = 'AN';
+annie.psth = abstractDots_poplnPSTH(anMat,anRespMat,plotPars);
+
+plotPars.monkID = 'SM';
+smith.psth = abstractDots_poplnPSTH(smMatRev,smRespMat,plotPars);
